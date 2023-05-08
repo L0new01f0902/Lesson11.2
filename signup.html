@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Designers Club - Main page</title>
+    <link rel="stylesheet" href="/signup_style.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css">
+    <style>
+      body{
+        background-image: url("bg.png");
+        background-repeat: no-repeat;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <ul id="nav">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Our aim</a></li>
+            <li><a href="">Our vision</a></li>
+            <li><a href="">Contacts</a></li>
+            <li><a href="/login.html">Login</a></li>
+            <li><a href="/signup.html">Sign up</a></li>
+            <li>
+                <div class="weather">
+                    <input type="text" name="" id="search-input">
+                    <h1 id="city-name"></h1>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon" width="30px" height="30px">
+                    <h2 id="degree"></h2>
+                    <h6 id="humidity"></h6>
+                </div>
+            </li>
+        </ul>
+    </header>
+          <div id="content">
+            <div class="login_signup">
+                <div class="box">
+                    <h1>Register</h1>
+                    <form>
+                      <div class="text-box">
+                        <h4>Name*</h4>
+                        <input type="text" placeholder="Your full name" name="" id="name" required>
+                      </div>
+                      <div class="text-box">
+                        <h4>Email*</h4>
+                        <input type="email" name="email" id="email" placeholder="Your email" size="64" maxlength="64" required pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" title="Please provide a valid email">
+                      </div>
+                      <div class="text-box">
+                        <h4>Password*</h4>
+                        <input type="password" placeholder="Your password" name="" id="password" required>
+                      </div>
+                      <div class="text-box">
+                        <h4>Repeat password*</h4>
+                        <input type="password" placeholder="Repeat password" name="" id="repeat-password" required>
+                      </div>
+                      <div class="text-box">
+                        <button id="signupbutton" type="submit" onclick="signup()">Đăng ký</button>
+                        <p class="alert">(*) Already exist?</p>
+                      </div>
+                    </form>
+                </div>
+        </div>
+        <footer>
+            <ul id="contacts">
+                <li>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+            </ul>
+            <h4>We are an environmentally friendly renewable energy company offering eco products, & solutions.</h4>
+        </footer>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
